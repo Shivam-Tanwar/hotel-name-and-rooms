@@ -11,11 +11,11 @@ import com.ef.demo.model.Hotel;
 @Repository
 public interface HotelRepository extends JpaRepository<Hotel, Long> {
 	
-	Optional<Hotel> findByHotelName(String Hotel_name);
-	List<Hotel> findByRoomTypes(String Room_types);
-	List<Hotel> findByRoomTypes();
+//	Optional<Hotel> findByHotelName(String Hotel_name);
+//	List<Hotel> findByRoomTypes(String Room_types);
+//	List<Hotel> findByRoomTypes();
 
 	void createNewHotel(String hotelName);
-	void updateHotel(Hotel hotel);
-	void deleteHotel(int hotelId);
+//	void updateHotel(Hotel hotel);
+//	void deleteHotel(int hotelId);
 }

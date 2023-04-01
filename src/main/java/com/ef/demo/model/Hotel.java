@@ -16,7 +16,7 @@ import org.hibernate.validator.constraints.Length;
 public class Hotel {
 	@SequenceGenerator(name = "hotel_sequence", sequenceName = "hotel_sequence", allocationSize = 1)
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "users_sequence")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "hotel_sequence")
 	private Long id;
 
 	@NotNull(message = "hotel name cannot be empty")
